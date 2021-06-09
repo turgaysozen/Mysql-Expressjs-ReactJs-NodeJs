@@ -16,6 +16,7 @@ Ama kullanılmak istenirse örneğin "a" değişkeni "global.a = 1" olarak ulaş
 
 4. Aşağıdaki kod şu anda çalışmıyor, nasıl çalışır hale getirebiliriz?
 
+```
 #!/usr/lib/node/v8/bin/node
 let parent = {
     func2: function () {
@@ -32,11 +33,12 @@ let parent = {
     }
 }
 parent.func1();
-
+```
 
 ################################
 
 Aşağıdaki şekilde çalıştırılabilr:
+```
 let parent = {
     func2: function () {
         return new Promise(function (resolve, reject) {
@@ -54,7 +56,7 @@ let parent = {
 }
 
 parent.func1()
-
+```
 5 - Proje:
 - Proje'de Nodejs, ExpressJs, Mysql ve Reactjs kullanıldı. ORM için asekron olduğundan dolayı "Sequlize" kullanıldı.
 Veritabanında oluşturulan datalar için sadece "GET" methodları ile verilerin Reactjs tarafında görselleştirilmesi sağlandı, herhangi bir 
