@@ -34,7 +34,7 @@ let parent = {
 parent.func1();
 
 
-################################33
+################################
 
 Aşağıdaki şekilde çalıştırılabilr:
 let parent = {
